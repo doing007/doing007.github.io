@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* =Base *//*************************************************************/
   body {
-    font-family: 'Quicksand', sans-serif;  
+    font-family: 'Quicksand', sans-serif;
     font-size: 100%;
     color: #012;
     background-color: #FFF; }
@@ -57,7 +57,7 @@
 
   .logo {
     font-size: 300%;
-    font-weight: 700;
+    font-weight: 500;
     color: #16a085;
     display: block; }
 
@@ -100,6 +100,7 @@
   .page-title__subtitle {
     font-weight: 400;
     font-size: 75%;
+    text-shadow: 1px 1px 2px rgba(3,3,3,0.5);
     color: #828282; }
 
 /* =Post teasers *//*************************************************************/
@@ -439,3 +440,41 @@
   /* Custom */
   .go-home {
     text-align: center; }
+
+/* Un ordered list styles in the home page - MO start */
+/* Unordered list style */
+.wrapper ul.ast-content-ul-list {
+  margin-left:1.4em;
+}
+.wrapper ul.ast-content-ul-list li {
+  position: relative;
+  padding-left: 30px;
+  list-style: none;
+  line-height: 3;
+}
+.wrapper ul.ast-content-ul-list li a {
+  color: lightslategray;
+  font-size: 17px;
+}
+.wrapper ul.ast-content-ul-list li:after{
+  position: absolute;
+  top: -webkit-calc( 50% - -1px);
+  top: calc( 50% - -1px);
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  /* padding-top: 2px; */
+  color: #fff;
+  text-align:center;
+  background-color: #16a085;
+  content: "\e900";
+  /* font-size: 10px; */
+  font-size: 1px;
+  font-family: 'Astra';
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
